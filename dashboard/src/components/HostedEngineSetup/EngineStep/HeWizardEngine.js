@@ -3,7 +3,7 @@ import MultiRowTextBoxContainer from '../MultiRowTextBox/MultiRoxTextBoxContaine
 import { getClassNames } from '../../../helpers/HostedEngineSetupUtil'
 import {deploymentTypes} from "../constants";
 import UnmaskablePasswordContainer from "../UnmaskablePassword";
-import CheckboxWithInfo from "./HeWizardEngineComponents/CheckboxWithInfo";
+import CheckboxWithInfo from "../../common/CheckboxWithInfo";
 
 const HeWizardEngine = ({deploymentType, heSetupModel, errorMsg, errorMsgs, handleEngineConfigUpdate,
                             handleRecipientAddressUpdate, handleRecipientAddressDelete, handleAdminPortalPwdUpdate}) => {
@@ -48,7 +48,7 @@ const HeWizardEngine = ({deploymentType, heSetupModel, errorMsg, errorMsgs, hand
                             idInfo={prop.idInfo}
                             iconTitle={prop.iconTitle}
                             checked={prop.checked}
-                            handleEngineConfigUpdate={handleEngineConfigUpdate}
+                            handleConfigUpdate={handleEngineConfigUpdate}
                             propName={prop.propName}
                             configType={prop.configType}
                             idInput={prop.idInput}

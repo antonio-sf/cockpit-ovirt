@@ -1,6 +1,6 @@
 import React from "react";
 
-const checkboxWithInfo = (props) => (
+const CheckboxWithInfo = (props) => (
     <div className="form-group">
         <label className="col-md-3 control-label">
             {props.label}
@@ -16,7 +16,7 @@ const checkboxWithInfo = (props) => (
                 type="checkbox"
                 checked={props.checked}
                 onChange={(e) =>
-                    props.handleEngineConfigUpdate(
+                    props.handleConfigUpdate(
                         props.propName,
                         e.target.checked,
                         props.configType
@@ -28,4 +28,4 @@ const checkboxWithInfo = (props) => (
     </div>
 );
 
-export default checkboxWithInfo;
+export default CheckboxWithInfo;
